@@ -1,6 +1,7 @@
 import { BsArrowRight, BsBricks } from "react-icons/bs";
 import { GrUserWorker } from "react-icons/gr";
 import { GiMiningHelmet } from "react-icons/gi";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -32,12 +33,14 @@ const Services = () => {
               attention to detail throughout the construction process. Trust us
               to make your dream project a reality.
             </p>
-            <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
-              Free Quote
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
-                <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
-              </div>
-            </button>
+            <Link href="/contact">
+              <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
+                Free Quote
+                <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
+                  <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
+                </div>
+              </button>
+            </Link>
           </div>
           {/* item 2 */}
 
@@ -54,12 +57,14 @@ const Services = () => {
               insights, innovative strategies, and meticulous attention to
               detail to ensure successful project outcomes.
             </p>
-            <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
-              Free Quote
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
-                <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
-              </div>
-            </button>
+            <Link href="/contact">
+              <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
+                Free Quote
+                <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
+                  <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
+                </div>
+              </button>
+            </Link>
           </div>
           {/* items 3 */}
           <div className=" py-6 pl-6 flex flex-col gap-8 bg-white text-[var(--color-text)] hover:text-white focus:text-white hover:bg-red-500 focus:bg-red-500 md:w-[30%]">
@@ -74,12 +79,14 @@ const Services = () => {
               timelines. Trust us to handle your construction management needs,
               delivering successful outcomes with expertise and professionalism.
             </p>
-            <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
-              Free Quote
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
-                <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
-              </div>
-            </button>
+            <Link href="/contact">
+              <button className=" flex items-center gap-2   px-5 py-2 rounded-2xl">
+                Free Quote
+                <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[var(--color-bg)] ">
+                  <BsArrowRight className="inline-flex text-[var(--color-primary)]" />
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

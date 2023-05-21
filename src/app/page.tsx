@@ -3,11 +3,14 @@ import { BsArrowRight } from "react-icons/bs";
 import { HiMailOpen, HiLocationMarker } from "react-icons/hi";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="" id="/">
-      <div className="main-content relative h-[30rem]  md:h-[40rem]">
+      <div className="main-content relative h-[30rem]  md:h-[40rem] mt-10">
         <div className=" ">
           <Image
             alt="hero"
@@ -31,12 +34,16 @@ export default function Home() {
             tailoring comprehensive solutions to meet specific requirements
           </p>
           <div className="buttons">
-            <button className="bg-[var(--color-primary)] px-4 py-2 rounded-lg  mr-6 md:mr-[5rem]">
-              Our Services <BsArrowRight className="inline-flex" />{" "}
-            </button>
-            <button className="bg-[var(--color-bg)] text-black px-4 py-2 rounded-lg">
-              More ABout Us!
-            </button>
+            <Link href="/services">
+              <button className="bg-[var(--color-primary)] px-4 py-2 rounded-lg  mr-6 md:mr-[5rem]">
+                Our Services <BsArrowRight className="inline-flex" />{" "}
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className="bg-[var(--color-bg)] text-black px-4 py-2 rounded-lg">
+                More ABout Us!
+              </button>
+            </Link>
             <div className=" hidden md:flex justify-around absolute left-0 bottom-0 w-full bg-white h-20 p-[0|px]">
               {/* item 1 */}
               <div className=" flex items-center gap-3">
@@ -77,6 +84,12 @@ export default function Home() {
       </section>
       <section>
         <Experience />
+      </section>
+      <section>
+        <Testimonials />
+      </section>
+      <section>
+        <Contact />
       </section>
     </main>
   );
